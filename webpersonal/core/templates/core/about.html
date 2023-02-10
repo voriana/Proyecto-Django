@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title%} Acerca de {% endblock%}
+
+{% block background %} {% load static %} {% static 'core/img/about-bg.jpg' %} {% endblock %}
+
+{% block headers %} 
+ <h1>Acerca de</h1>
+<span class="subheading">Conocimientos y experiencia</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+     <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar_1.png' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+      <h2 class="section-heading">Oriana Varela</h2>   
+      <p>+3 años de experiencia en áreas dígitales</p>
+      <p>Analista de datos| Ing. de datos </p>
+      <p>Base Datos: Oracle - Sql Server</p>
+      <p>Lenguajes: Sql | Pl/Sql | Python </p>
+    </div>
+</div>
+{% endblock %}
